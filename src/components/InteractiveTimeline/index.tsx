@@ -80,7 +80,7 @@ const timelineData = [
   {
     id: 8,
     date: "2025",
-    title: "Backedn focused-Full Stack Developer",
+    title: "Backend focused-Full Stack Developer",
     description:
       " Worked on scalable applications, backend APIs, and frontend features using Next.js, Node.js, and PostgreSQL.",
     category: "work",
@@ -90,7 +90,7 @@ const timelineData = [
   {
     id: 9,
     date: "2025",
-    title: "Backedn focused-Full Stack Developer",
+    title: "Backend focused-Full Stack Developer",
     description:
       "Currently working on scalable applications, backend APIs, Microservices",
     category: "work",
