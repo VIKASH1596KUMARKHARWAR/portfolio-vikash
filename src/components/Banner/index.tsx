@@ -4,6 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import { Variants } from "framer-motion";
 
 export default function Banner() {
   const ref = useRef<HTMLDivElement>(null);
@@ -100,14 +101,14 @@ export default function Banner() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.42, 0, 0.58, 1], // type-safe equivalent of "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
