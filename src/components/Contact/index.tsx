@@ -4,13 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
 import { motion } from "framer-motion";
-import {
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  FaStar,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
