@@ -101,16 +101,13 @@ export default function Banner() {
   };
 
   const itemVariants = {
-    hidden: {
-      y: 50,
-      opacity: 0,
-    },
+    hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.8,
-        ease: "easeOut",
+        duration: 0.5,
+        ease: [0.42, 0, 0.58, 1], // type-safe equivalent of "easeInOut"
       },
     },
   };
@@ -318,7 +315,6 @@ export default function Banner() {
                   Welcome to my portfolio
                 </span>
               </motion.div>
-
               <motion.h1
                 variants={itemVariants}
                 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight"
@@ -329,7 +325,6 @@ export default function Banner() {
                   <span className="absolute bottom-0 left-0 w-full h-0.5 sm:h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-60"></span>
                 </span>
               </motion.h1>
-
               <motion.h3
                 variants={itemVariants}
                 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-1 sm:mt-2 md:mt-4 leading-tight"
@@ -344,14 +339,12 @@ export default function Banner() {
                   </div>
                 </div>
               </motion.h3>
-
               <motion.h3
                 variants={itemVariants}
                 className="text-base sm:text-xl md:text-2xl font-thin mx-auto leading-relaxed mt-1 sm:mt-2"
               >
                 {occupation}
               </motion.h3>
-
               {/* Animated line separator */}
               <motion.div
                 initial={{ scaleX: 0 }}
@@ -359,7 +352,6 @@ export default function Banner() {
                 transition={{ duration: 0.8, delay: 1.5 }}
                 className="w-24 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-[#8c1df3] to-[#621aaf] mx-auto mt-3 sm:mt-4 rounded-full"
               />
-
               {/* Action buttons */}
               <motion.div
                 variants={itemVariants}
