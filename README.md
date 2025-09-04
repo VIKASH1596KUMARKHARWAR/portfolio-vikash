@@ -1,4 +1,4 @@
-# Portfolio | Oussama Sallak
+<!-- # Portfolio | Oussama Sallak
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://osallak.me)
 [![GitHub](https://img.shields.io/github/license/osallak/portfolio)](https://github.com/osallak/portfolio/blob/main/LICENSE)
@@ -130,4 +130,4 @@ Project Link: [https://github.com/osallak/portfolio](https://github.com/osallak/
 
 ---
 
-Built with ❤️ by [Oussama Sallak](https://github.com/osallak)
+Built with ❤️ by [Oussama Sallak](https://github.com/osallak) -->
