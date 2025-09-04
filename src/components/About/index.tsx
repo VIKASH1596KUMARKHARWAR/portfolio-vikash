@@ -57,38 +57,36 @@ const About = () => {
             className="flex-1 space-y-3 sm:space-y-6 px-2 sm:px-0"
           >
             <p className="text-[15px] sm:text-lg lg:text-xl text-[#ababab] leading-relaxed">
-              Full Stack Engineer with over 4 years of hands-on development
-              experience spanning fintech, system architecture, and web
-              applications. My journey combines professional work at a financial
-              services company, diverse freelance projects, and continuous
-              self-improvement through open-source contributions.
+              I&apos;m a final-year B.Tech student and aspiring Software
+              Engineer with a strong focus on backend development. Over the past
+              few years, I&apos;ve built projects using the MERN stack, Next.js,
+              and modern backend frameworks while also exploring DevOps
+              practices with Docker, Kubernetes, AWS, and Terraform.
             </p>
             <p className="text-[15px] sm:text-lg lg:text-xl text-[#ababab] leading-relaxed">
-              I specialize in building performant web applications with Next.js,
-              React, and TypeScript on the frontend, backed by robust Node.js,
-              NestJS, and PostgreSQL solutions. My background in system
-              programming with C/C++ has equipped me with a deep understanding
-              of performance optimization and efficient resource management that
-              informs my approach to web development.
+              My primary strength lies in designing and implementing scalable
+              backend systems with Node.js and Express, but I also enjoy working
+              across the full stack to deliver complete applications with
+              professional UI/UX.
             </p>
             <p className="text-[15px] sm:text-lg lg:text-xl text-[#ababab] leading-relaxed">
-              What sets me apart is my versatility across the entire stack—from
-              crafting intuitive user interfaces to designing scalable backend
-              architectures and implementing DevOps pipelines. I excel in
-              environments that challenge me to apply both creative and
-              analytical thinking to complex problems.
+              I have hands-on internship experience where I contributed to
+              building new features, improving performance, and working with
+              real-world cloud deployment workflows. These experiences shaped my
+              ability to write clean, maintainable code and collaborate
+              effectively in team environments.
             </p>
             <p className="text-[15px] sm:text-lg lg:text-xl text-[#ababab] leading-relaxed">
-              Currently, I&apos;m expanding my expertise in Web3 technologies,
-              distributed systems, and cloud-native architectures. I&apos;m
-              particularly interested in projects that leverage modern
-              frameworks to create scalable, resilient applications that deliver
-              exceptional user experiences.
+              Currently, I&apos;m deepening my knowledge of Machine Learning, AI
+              agents, and advanced Data Structures & Algorithms, with a goal of
+              blending backend engineering expertise with intelligent systems.
             </p>
             <p className="text-[15px] sm:text-lg lg:text-xl text-[#ababab] leading-relaxed">
-              I&apos;m open to collaboration on innovative projects where I can
-              contribute my technical skills while continuing to grow as an
-              engineer. Let&apos;s build something remarkable together.
+              I&apos;m passionate about building impactful software solutions,
+              whether it&apos;s a scalable backend, a full-stack application, or
+              an AI-driven system. Always eager to learn, experiment, and
+              collaborate on exciting projects that push me to grow as an
+              engineer.
             </p>
           </motion.div>
 

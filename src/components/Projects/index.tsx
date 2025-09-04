@@ -51,48 +51,44 @@ const ProjectCard = ({
         </div>
       </motion.div>
       <div className="flex flex-col flex-grow">
-        <div>
-          <div className="flex flex-row items-center justify-between">
-            <p className="text-lg sm:text-2xl font-bold break-words">{title}</p>
-            <div className="flex flex-row gap-2 sm:gap-0">
-              {repo && (
+        <div className="flex flex-row items-center justify-between">
+          <p className="text-lg sm:text-2xl font-bold break-words">{title}</p>
+          <div className="flex flex-row gap-2 sm:gap-0">
+            {repo && (
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-200 hover:opacity-50"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Icon icon="bxl:github" className="text-xl sm:text-2xl" />
+              </motion.a>
+            )}
+            {link && (
+              <>
+                {repo && (
+                  <div className="mx-2 sm:mx-4 w-[1px] h-auto bg-[#2e2e2e]" />
+                )}
                 <motion.a
                   whileHover={{ scale: 1.1 }}
-                  href={repo}
+                  href={link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-all duration-200 hover:opacity-50"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <Icon icon="bxl:github" className="text-xl sm:text-2xl" />
+                  <Icon
+                    icon="material-symbols:link-rounded"
+                    className="text-xl sm:text-2xl"
+                  />
                 </motion.a>
-              )}
-              {link && (
-                <>
-                  {repo && (
-                    <div className="mx-2 sm:mx-4 w-[1px] h-auto bg-[#2e2e2e]" />
-                  )}
-                  <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-all duration-200 hover:opacity-50"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Icon
-                      icon="material-symbols:link-rounded"
-                      className="text-xl sm:text-2xl"
-                    />
-                  </motion.a>
-                </>
-              )}
-            </div>
+              </>
+            )}
           </div>
-          <p className="mt-3 sm:mt-4 text-sm sm:text-lg text-gray-300">
-            {desc}
-          </p>
         </div>
+        <p className="mt-3 sm:mt-4 text-sm sm:text-lg text-gray-300">{desc}</p>
         <div className="flex flex-wrap gap-2 mt-auto pt-4">
           {technologies.map((tech, index) => (
             <span
@@ -117,9 +113,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const response = await fetch("/api/projects");
-        if (!response.ok) {
-          throw new Error("Failed to fetch projects");
-        }
+        if (!response.ok) throw new Error("Failed to fetch projects");
         const data = await response.json();
         setProjects(data.projects);
       } catch (err) {
@@ -130,7 +124,6 @@ const Projects = () => {
         setLoading(false);
       }
     };
-
     fetchProjects();
   }, []);
 
@@ -155,7 +148,7 @@ const Projects = () => {
         />
       </motion.div>
 
-      <div className="pt-4">
+      <div className="pt-4 mb-10">
         {loading ? (
           <div className="flex justify-center items-center min-h-[400px]">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
@@ -173,27 +166,22 @@ const Projects = () => {
             </div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center mt-12"
+              className="flex justify-center mt-12 mb-16"
+              whileHover={{ scale: 1.05 }}
             >
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href="https://github.com/osallak"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 bg-[#2e2e2e50] px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-[#2e2e2e] transition-all duration-200 hover:border-[#343434]"
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/VIKASH1596KUMARKHARWAR",
+                    "_blank"
+                  )
+                }
+                className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-colors duration-200"
               >
-                <span className="text-lg sm:text-xl font-semibold">
-                  See More Projects
-                </span>
-                <Icon
-                  icon="bxl:github"
-                  className="text-2xl transition-all duration-200 group-hover:translate-x-1"
-                />
-              </motion.a>
+                <span>See More Projects</span>
+                <Icon icon="bxl:github" className="text-xl" />
+              </button>
+              <br />
             </motion.div>
           </>
         )}

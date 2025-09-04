@@ -5,25 +5,12 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    title: "2021 - Present",
-    cardTitle: "Software Engineering",
-    cardSubtitle: "1337 School (42 Network) - Programming School",
+    title: "2022 - Present",
+    cardTitle: "B.Tech in Computer Science and Engineering",
+    cardSubtitle: "National Institute of Technology Mizoram",
     cardDetailedText:
-      "An intensive project-based curriculum focused on software engineering, algorithms, and system programming. Part of the prestigious 42 Network known for its peer-to-peer learning methodology.",
-  },
-  {
-    title: "2018 - 2021",
-    cardTitle: "Economics and Management",
-    cardSubtitle: "Faculty of Economics and Management - University Hassan I",
-    cardDetailedText:
-      "Studied economics and management with focus on data analysis and business systems, developing analytical skills that complement software engineering.",
-  },
-  {
-    title: "2018",
-    cardTitle: "High School Diploma",
-    cardSubtitle: "Economics and Management",
-    cardDetailedText:
-      "Completed secondary education with focus on scientific subjects including mathematics, economics, and management.",
+      "Currently pursuing a B.Tech with focus on software engineering, full-stack web development, algorithms, system programming, and microservices architecture. Gaining hands-on experience with cloud-native technologies, DevOps practices, and modern frameworks.",
+    mentors: ["Dharkirat Singha", "Sanket Singh"], // Optional mentors for guidance
   },
 ];
 

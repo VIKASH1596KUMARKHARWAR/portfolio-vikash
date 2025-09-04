@@ -11,20 +11,21 @@ const DynamicChrono = dynamic(
 );
 
 const experienceData = [
-  {
-    title: "September 2024 - Present",
-    cardTitle: "Fiverr, Upwork",
-    cardSubtitle: "Full-Stack Developer",
-    cardDetailedText:
-      "An intensive project-based curriculum focused on software engineering, algorithms, and system programming. Part of the prestigious 42 Network known for its peer-to-peer learning methodology.",
-  },
-  {
-    title: "December 2023 - September 2024",
-    cardTitle: "Lendstack Inc",
-    cardSubtitle: "Software Engineer",
-    cardDetailedText:
-      "An intensive project-based curriculum focused on software engineering, algorithms, and system programming. Part of the prestigious 42 Network known for its peer-to-peer learning methodology.",
-  },
+  {},
+  // {
+  //   title: "September 2024 - Present",
+  //   cardTitle: "Fiverr, Upwork",
+  //   cardSubtitle: "Full-Stack Developer",
+  //   cardDetailedText:
+  //     "An intensive project-based curriculum focused on software engineering, algorithms, and system programming. Part of the prestigious 42 Network known for its peer-to-peer learning methodology.",
+  // },
+  // {
+  //   title: "December 2023 - September 2024",
+  //   cardTitle: "Lendstack Inc",
+  //   cardSubtitle: "Software Engineer",
+  //   cardDetailedText:
+  //     "An intensive project-based curriculum focused on software engineering, algorithms, and system programming. Part of the prestigious 42 Network known for its peer-to-peer learning methodology.",
+  // },
 ];
 
 const Experience = () => {

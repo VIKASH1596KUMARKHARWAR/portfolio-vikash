@@ -1,7 +1,7 @@
-<!-- # Portfolio | Oussama Sallak
+<!-- # Portfolio | Vikash Kumar kharwar
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://osallak.me)
-[![GitHub](https://img.shields.io/github/license/osallak/portfolio)](https://github.com/osallak/portfolio/blob/main/LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://oKumar kharwar.me)
+[![GitHub](https://img.shields.io/github/license/oKumar kharwar/portfolio)](https://github.com/VIKASH1596KUMARKHARWAR/portfolio/blob/main/LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-15.x-black)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC)](https://tailwindcss.com)
@@ -44,7 +44,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/osallak/portfolio.git
+   git clone https://github.com/VIKASH1596KUMARKHARWAR/portfolio.git
    cd portfolio
    ```
 
@@ -116,7 +116,7 @@ The portfolio is designed to be fully responsive across all device sizes:
 
 This project is set up for easy deployment on Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fosallak%2Fportfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FoKumar kharwar%2Fportfolio)
 
 ## 📄 License
 
@@ -124,10 +124,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contact
 
-Oussama Sallak - [@osallak](https://x.com/) - oussamasallak1@gmail.com
+Vikash Kumar kharwar - [@oKumar kharwar](https://x.com/) - VikashKumar kharwar1@gmail.com
 
-Project Link: [https://github.com/osallak/portfolio](https://github.com/osallak/portfolio)
+Project Link: [https://github.com/VIKASH1596KUMARKHARWAR/portfolio](https://github.com/VIKASH1596KUMARKHARWAR/portfolio)
 
 ---
 
-Built with ❤️ by [Oussama Sallak](https://github.com/osallak) -->
+Built with ❤️ by [Vikash Kumar kharwar](https://github.com/VIKASH1596KUMARKHARWAR) -->

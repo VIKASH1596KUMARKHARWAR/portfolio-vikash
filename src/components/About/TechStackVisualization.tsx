@@ -14,6 +14,8 @@ import {
   SiCplusplus,
 } from "react-icons/si";
 
+import { FaGolang } from "react-icons/fa6";
+
 interface TechNode {
   id: string;
   label: string;
@@ -44,6 +46,7 @@ const TechStackVisualization = () => {
       y: 35,
       group: "frontend",
     },
+
     {
       id: "next",
       label: "Next.js",
@@ -98,6 +101,15 @@ const TechStackVisualization = () => {
       color: "#000000",
       x: 60,
       y: 20,
+      group: "backend",
+    },
+    {
+      id: "golang",
+      label: "Golang",
+      icon: <FaGolang size={20} />,
+      color: "#35abc9ff",
+      x: 70,
+      y: 45,
       group: "backend",
     },
 

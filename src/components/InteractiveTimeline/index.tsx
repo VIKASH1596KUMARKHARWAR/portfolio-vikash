@@ -5,176 +5,97 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { FaBriefcase, FaCode, FaGraduationCap, FaTrophy } from "react-icons/fa";
 
 // Timeline data - key career moments, projects, and achievements
+// Timeline data - key career moments, projects, and achievements
 const timelineData = [
   {
     id: 1,
-    date: "2019",
-    title: "Started Coding Journey",
+    date: "2021",
+    title: "First Step into Programming",
     description:
-      "Began learning basic HTML, CSS, and Java through various online courses",
+      "Started with C and C++ to understand programming fundamentals, data structures, and algorithms.",
     category: "education",
     icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
+    isKeyMilestone: true,
   },
   {
     id: 2,
-    date: "2020",
-    title: "First Development Projects",
+    date: "2022",
+    title: "Explored Web Development",
     description:
-      "Built small projects like calculators and simple applications to practice coding skills",
-    category: "project",
+      "Learned HTML, CSS, and JavaScript while building small projects like portfolio pages and calculators.",
+    category: "education",
     icon: <FaCode className="text-purple-400" />,
     isKeyMilestone: false,
   },
   {
     id: 3,
-    date: "Aug 2021",
-    title: "Selected for 1337 Coding School",
+    date: "2022-2023",
+    title: "Mastered C++ and DSA",
     description:
-      "Joined 1337 (42 Network) to pursue intensive software engineering education",
+      "Practiced problem-solving on LeetCode and Codeforces, developing a solid foundation in OOP, multithreading, and algorithms.",
     category: "education",
     icon: <FaGraduationCap className="text-blue-400" />,
     isKeyMilestone: true,
   },
   {
     id: 4,
-    date: "Nov 2021 - Feb 2022",
-    title: "C Language Mastery",
+    date: "2023",
+    title: "MERN Stack Development",
     description:
-      "Mastered C programming through multiple projects focused on memory management, algorithms, and UNIX systems programming",
-    category: "education",
-    icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 5,
-    date: "Mar-Jun 2022",
-    title: "Systems & Network Programming",
-    description:
-      "Developed advanced understanding of threads, processes, synchronization, and networking fundamentals",
-    category: "education",
-    icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 6,
-    date: "Jul 2022",
-    title: "Robotics Competition - 2nd Place",
-    description:
-      "Won second place in a robotics competition in Meknes, Morocco, building and programming a robot car with Arduino to solve a maze autonomously",
-    category: "achievement",
-    icon: <FaTrophy className="text-yellow-400" />,
+      "Dived into full stack development with React, Next.js, Node.js, and MongoDB. Built multiple projects including blogs, task managers, and APIs.",
+    category: "project",
+    icon: <FaCode className="text-purple-400" />,
     isKeyMilestone: true,
   },
   {
-    id: 7,
-    date: "Aug 2022",
-    title: "UNIX Shell Implementation",
+    id: 5,
+    date: "2023",
+    title: "First Internship Experience",
     description:
-      "Created a fully-featured UNIX shell with built-in commands, pipes, redirections, and signal handling",
+      "Worked as a Backend Intern, contributing to API development, database optimization, and bug fixes in production environments.",
+    category: "work",
+    icon: <FaBriefcase className="text-green-400" />,
+    isKeyMilestone: true,
+  },
+  {
+    id: 6,
+    date: "2024",
+    title: "DevOps & Cloud Exploration",
+    description:
+      "Started learning Docker, Kubernetes, Terraform, and AWS. Built CI/CD pipelines for personal projects to understand cloud deployment.",
+    category: "education",
+    icon: <FaGraduationCap className="text-blue-400" />,
+    isKeyMilestone: false,
+  },
+  {
+    id: 7,
+    date: "2024",
+    title: " Internship and Freelance Projects",
+    description:
+      "Completed Internship and freelance projects, including REST APIs and responsive full-stack apps.",
     category: "achievement",
     icon: <FaTrophy className="text-yellow-400" />,
     isKeyMilestone: false,
   },
   {
     id: 8,
-    date: "Sep-Oct 2022",
-    title: "Object-Oriented Programming",
+    date: "2025",
+    title: "Backedn focused-Full Stack Developer",
     description:
-      "Transitioned to C++ and gained expertise in OOP principles, design patterns, and STL",
-    category: "education",
-    icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
+      " Worked on scalable applications, backend APIs, and frontend features using Next.js, Node.js, and PostgreSQL.",
+    category: "work",
+    icon: <FaBriefcase className="text-green-400" />,
+    isKeyMilestone: true,
   },
   {
     id: 9,
-    date: "Nov 2022",
-    title: "Problem Solving Competition - 4th Place",
+    date: "2025",
+    title: "Backedn focused-Full Stack Developer",
     description:
-      "Achieved 4th place with a team of three in a competitive problem solving competition held in Rabat, Morocco",
-    category: "achievement",
-    icon: <FaTrophy className="text-yellow-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 10,
-    date: "Feb 2023",
-    title: "3D Graphics Programming",
-    description:
-      "Built a raycasting engine from scratch, implementing rendering techniques and 3D mathematics",
-    category: "achievement",
-    icon: <FaTrophy className="text-yellow-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 11,
-    date: "Mar-Jun 2023",
-    title: "Advanced Software Engineering",
-    description:
-      "Developed expertise in network protocols, containerization, infrastructure management, and DevOps practices",
-    category: "education",
-    icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 12,
-    date: "Oct 2023",
-    title: "Full-Stack Certification",
-    description:
-      "Completed the common core curriculum at 1337 with a full-stack web application, demonstrating proficiency across the entire software stack",
-    category: "achievement",
-    icon: <FaTrophy className="text-yellow-400" />,
-    isKeyMilestone: true,
-  },
-  {
-    id: 13,
-    date: "Nov 2023 - Jul 2024",
-    title: "Software Engineer at LendStack",
-    description:
-      "Led KYC implementation for a fintech startup, reducing verification times by 30% and enhancing platform scalability",
+      "Currently working on scalable applications, backend APIs, Microservices",
     category: "work",
     icon: <FaBriefcase className="text-green-400" />,
     isKeyMilestone: true,
-  },
-  {
-    id: 14,
-    date: "2024",
-    title: "Activia Challenge Project",
-    description:
-      "Developed high-traffic promotion platform for Activia Danone handling 100K+ users with ML-powered product recognition",
-    category: "work",
-    icon: <FaBriefcase className="text-green-400" />,
-    isKeyMilestone: true,
-  },
-  {
-    id: 15,
-    date: "Jul 2024 - Mar 2025",
-    title: "Freelance Development",
-    description:
-      "Building web applications, APIs, and Discord bots for various clients while advancing technical expertise",
-    category: "work",
-    icon: <FaBriefcase className="text-green-400" />,
-    isKeyMilestone: false,
-  },
-  {
-    id: 16,
-    date: "Apr 2025 - Present",
-    title: "Full Stack Developer at Akera",
-    description:
-      "Working on building and maintaining scalable web applications, focusing on both frontend and backend development",
-    category: "work",
-    icon: <FaBriefcase className="text-green-400" />,
-    isKeyMilestone: true,
-  },
-  {
-    id: 17,
-    date: "Current",
-    title: "Advanced Curriculum",
-    description:
-      "Pursuing specialized studies in web technologies, distributed systems, and infrastructure management at 1337",
-    category: "education",
-    icon: <FaGraduationCap className="text-blue-400" />,
-    isKeyMilestone: false,
   },
 ];
 
@@ -480,16 +401,14 @@ const InteractiveTimeline = () => {
               Looking Forward
             </h3>
             <p className="text-[#ababab] text-center max-w-3xl mx-auto">
-              As I continue advancing in my software engineering journey,
-              I&apos;m particularly focused on mastering distributed systems,
-              microservice architectures, and cloud-native development. Having
-              built a solid foundation in full-stack web development, system
-              programming, and DevOps, I&apos;m now exploring areas like
-              Kubernetes, infrastructure as code, and Web3 technologies. My goal
-              is to create scalable, high-impact solutions that combine
-              technical excellence with exceptional user experiences, while
-              continuing to contribute to meaningful projects and expand my
-              expertise across the technology stack.
+              I’m focused on deepening my expertise in distributed systems,
+              microservices, and cloud-native development. With a strong
+              foundation in backend engineering, full-stack development, and
+              DevOps, I aim to build scalable, reliable, and impactful
+              solutions. I’m now exploring AI/ML, and Generative AI
+              technologies, with the goal of contributing to innovative projects
+              that leverage intelligent systems to deliver exceptional user
+              experiences.
             </p>
           </div>
         </motion.div>

@@ -1,70 +1,88 @@
 {
   "projects": [
     {
-      "title": "Portfolio Website",
-      "image": "portfolio.jpeg",
-      "desc": "A personal portfolio website built with Next.js and TailwindCSS to showcase my projects, qualifications, and skills. Features a modern design with smooth animations and responsive layout.",
-      "repo": "https://github.com/osallak/portfolio",
-      "link": "https://osallak.tech",
-      "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
-    },
-    {
-      "title": "Spotify Profile Stats & Dashboard",
-      "image": "spotify.png",
-      "desc": "A Spotify profile stats and dashboard built with Next.js and TailwindCSS. It allows you to see your Spotify profile stats and dashboard.",
-      "repo": "https://github.com/osallak/spotify-wrapped",
-      "link": "https://spotify-wrapped-xi.vercel.app/",
-      "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Spotify API"]
-    },
-    {
-      "title": "Wordle Clone",
-      "image": "wordle.png",
-      "desc": "A Wordle clone built with React. It allows you to play the game and see your stats.",
-      "repo": "https://github.com/osallak/wordle-clone",
-      "link": "https://react-wordle-orcin.vercel.app/",
-      "technologies": ["React", "JavaScript", "CSS"]
-    },
-    {
-      "title": "Streamix",
-      "image": "streamix.png",
-      "desc": "A movie streaming platform built with Next.js and TailwindCSS. It allows you to stream movies and TV shows ",
-      "repo": "https://github.com/osallak/streamix",
+      "title": "AirTicket – Airline Booking Backend (Microservices)",
+      "image": "monitoring-instances-loadBalancerEffect.png",
+      "desc": "A scalable airline booking backend built using microservices architecture with Node.js, Express, MySQL (Sequelize ORM), AWS, RabbitMQ, and Cron Jobs. Includes Booking, Flight, Search, Auth, and Reminder services, enabling modular and maintainable code.",
+      "repo": "https://github.com/VIKASH1596KUMARKHARWAR/AirTicket_API_GATEWAY",
+      "link": "",
       "technologies": [
-        "Next.js",
-        "TypeScript",
-        "TailwindCSS",
-        "TMDB API",
-        "VIDSRC API"
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Sequelize ORM",
+        "AWS",
+        "RabbitMQ",
+        "Cron Jobs",
+        "Microservices"
       ]
     },
     {
-      "title": "Multiplayer Pong Game",
-      "image": "pong.png",
-      "desc": "A multiplayer pong game built with React and Socket.io. It allows you to play the game, chat, and see your stats with your friends.",
-      "repo": "https://github.com/osallak/SpinShot",
+      "title": "Zentrox – Autonomous Workflow Automation Tool",
+      "image": "ui-1.png",
+      "desc": "A real-time, no-code workflow automation platform for startups and SMEs. Enables users to automate business tasks with an intuitive drag-and-drop workflow builder, real-time webhook triggers, and third-party integrations like Google Drive, Slack, and Notion.",
+      "repo": "https://github.com/VIKASH1596KUMARKHARWAR/zentrox-",
+      "link": "",
       "technologies": [
         "Next.js",
-        "Socket.io",
-        "TailwindCSS",
-        "Nest.js",
+        "Tailwind CSS",
         "PostgreSQL",
-        "REST API",
+        "Prisma ORM",
+        "Clerk.dev",
+        "Stripe API",
+        "Webhooks",
+        "No-Code Automation"
+      ]
+    },
+    {
+      "title": "Zapier-Lite – Transactional Outbox Automation Platform",
+      "image": "zapier-lite.png",
+      "desc": "A simplified automation platform inspired by Zapier, focusing on atomic workflows using a transactional outbox pattern. Supports webhooks, email actions, and Solana-based bounty payouts, powered by Kafka for reliable event-driven architecture.",
+      "repo": "https://github.com/VIKASH1596KUMARKHARWAR/Zapier-Lite",
+      "link": "",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Kafka",
+        "Docker",
+        "Transactional Outbox",
+        "Solana Blockchain",
+        "Webhook Automation"
+      ]
+    },
+    {
+      "title": "CryptoTradeX – High-Performance Cryptocurrency Exchange",
+      "image": "crypto.png",
+      "desc": "A scalable cryptocurrency exchange system focusing on concurrency, real-time trading, and high performance. Features include in-memory orderbooks, sequential workflow processing, and WebSocket streaming for live market data.",
+      "repo": "https://github.com/VIKASH1596KUMARKHARWAR/CryptoTradeX",
+      "link": "",
+      "technologies": [
+        "Node.js",
+        "TypeScript",
+        "Next.js",
+        "Redis",
+        "TimescaleDB",
+        "PostgreSQL",
+        "WebSockets",
         "Docker"
       ]
     },
     {
-      "title": "System Administration Project",
-      "image": "inception.png",
-      "desc": "A containerized web infrastructure project featuring WordPress, NGINX, and MariaDB. Built with Docker for seamless deployment, featuring TLS encryption, automated container orchestration, and persistent data storage.",
-      "repo": "https://github.com/osallak/inception",
+      "title": "Paytm Payment Gateway",
+      "image": "pay.png",
+      "desc": "A digital payment platform supporting secure P2P transactions, bank on-ramp/off-ramp, QR code payments, and merchant operations. Built using a monorepo architecture with Turborepo, featuring webhook-based real-time updates and Prisma ORM for database management.",
+      "repo": "https://github.com/VIKASH1596KUMARKHARWAR/paytm-payment-gateway",
+      "link": "",
       "technologies": [
-        "Docker",
-        "NGINX",
-        "WordPress",
-        "MariaDB",
-        "PHP-FPM",
-        "Shell Script",
-        "TLS 1.2/1.3"
+        "Next.js",
+        "Express.js",
+        "TypeScript",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Prisma",
+        "Webhooks",
+        "Turborepo"
       ]
     }
   ]

@@ -8,7 +8,7 @@ import { useRef, useState, useEffect } from "react";
 export default function Banner() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: false });
-  const occupation = "Software Engineer & Full Stack Developer";
+  const occupation = "Software Engineer | Backend-focused Full Stack Developer";
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMounted, setIsMounted] = useState(false);
 
@@ -325,7 +325,7 @@ export default function Banner() {
               >
                 Hi, I&apos;m{" "}
                 <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text relative">
-                  Oussama!
+                  Vikash!
                   <span className="absolute bottom-0 left-0 w-full h-0.5 sm:h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-60"></span>
                 </span>
               </motion.h1>
@@ -383,7 +383,7 @@ export default function Banner() {
 
                 <div className="flex items-center gap-3 sm:gap-4 mt-3 sm:mt-0">
                   <motion.a
-                    href="https://github.com/osallak"
+                    href="https://github.com/VIKASH1596KUMARKHARWAR"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -5 }}
@@ -393,7 +393,7 @@ export default function Banner() {
                     <FaGithub size={16} className="sm:text-xl md:text-2xl" />
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com/in/osallak"
+                    href="https://www.linkedin.com/in/vikash-kumar-kharwar-142157265/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -5 }}

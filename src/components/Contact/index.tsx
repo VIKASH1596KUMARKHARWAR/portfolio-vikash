@@ -150,22 +150,17 @@ function Contact() {
   const socialLinks = [
     {
       icon: <FaGithub className="text-xl sm:text-2xl" />,
-      url: "https://github.com/osallak",
+      url: "https://github.com/VIKASH1596KUMARKHARWAR",
       label: "GitHub",
     },
     {
       icon: <FaLinkedin className="text-xl sm:text-2xl" />,
-      url: "https://linkedin.com/in/osallak",
+      url: "https://www.linkedin.com/in/vikash-kumar-kharwar-142157265/",
       label: "LinkedIn",
     },
     {
-      icon: <FaTwitter className="text-xl sm:text-2xl" />,
-      url: "https://x.com/uss4ma",
-      label: "Twitter",
-    },
-    {
       icon: <FaEnvelope className="text-xl sm:text-2xl" />,
-      url: "mailto:oussamasallak1@gmail.com",
+      url: "mailto:amit.sbz1596@gmail.com",
       label: "Email",
     },
   ];

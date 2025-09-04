@@ -36,14 +36,14 @@ const Skills = () => {
     { icon: "nextjs-dark", name: "Next.js" },
     { icon: "tailwindcss-dark", name: "Tailwind" },
     { icon: "nodejs-dark", name: "Node.js" },
-    { icon: "fastapi", name: "FastAPI" },
-    { icon: "django", name: "Django" },
-    { icon: "laravel", name: "Laravel" },
+
+    { icon: " go-lang", name: "Golang" },
+
     { icon: "postgresql-dark", name: "PostgreSQL" },
     { icon: "mongodb", name: "MongoDB" },
     { icon: "mysql-dark", name: "MySQL" },
     { icon: "docker", name: "Docker" },
-    { icon: "kubernetes", name: "Kubernetes" },
+    // { icon: "kubernetes", name: "Kubernetes" },
     { icon: "aws-dark", name: "AWS" },
     { icon: "github-dark", name: "GitHub" },
     { icon: "git", name: "Git" },

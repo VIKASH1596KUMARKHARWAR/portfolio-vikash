@@ -18,18 +18,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vikash Kumar kharwar | Portfolio",
+  title: "Vikash Kumar Kharwar | Portfolio",
   description:
-    "Welcome to Vikash Kumar kharwar's portfolio - Full Stack Developer passionate about creating innovative web solutions",
-  authors: [{ name: "Vikash Kumar kharwar" }],
+    "Welcome to Vikash Kumar Kharwar's portfolio - Backedn focused-Full Stack Developer passionate about creating innovative web solutions",
+  authors: [{ name: "Vikash Kumar Kharwar" }],
   keywords: [
-    "Vikash Kumar kharwar",
+    "Vikash Kumar Kharwar",
     "Portfolio",
     "Full Stack Developer",
     "Web Development",
     "Software Engineer",
   ],
-  creator: "Vikash Kumar kharwar",
+  creator: "Vikash Kumar Kharwar",
   icons: {
     icon: [
       {
@@ -49,17 +49,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Vikash Kumar kharwar | Portfolio",
+    title: "Vikash Kumar Kharwar | Portfolio",
     description:
-      "Welcome to Vikash Kumar kharwar's portfolio - Full Stack Developer passionate about creating innovative web solutions",
-    siteName: "Vikash Kumar kharwar Portfolio",
+      "Welcome to Vikash Kumar Kharwar's portfolio - Full Stack Developer passionate about creating innovative web solutions",
+    siteName: "Vikash Kumar Kharwar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikash Kumar kharwar | Portfolio",
+    title: "Vikash Kumar Kharwar | Portfolio",
     description:
-      "Welcome to Vikash Kumar kharwar's portfolio - Full Stack Developer passionate about creating innovative web solutions",
-    creator: "@VikashKumar kharwar",
+      "Welcome to Vikash Kumar Kharwar's portfolio - Full Stack Developer passionate about creating innovative web solutions",
+    creator: "@VikashKumar Kharwar",
   },
 };
 
